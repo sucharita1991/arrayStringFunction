@@ -19,6 +19,7 @@
       arrayFunction :: shuffleArray($array);
       arrayFunction :: pushArray($array,"11","12");
 
+      echo '<hr>';
       echo '<h1>String Functions Demonstration</h1>';
       $stringText = "My name is Sucharita Das";
       stringFunction :: printText($stringText);
