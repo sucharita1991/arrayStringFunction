@@ -36,114 +36,102 @@
   }
 
     class arrayFunction{
+      public static function headPrint($funcName){
+        echo '<hr>';
+        echo '<h1>'.$funcName.' function demo</h1>';
+      }
 
       public static function printArray($array) {
-        echo '<h1>array print function</h1>';
+        arrayFunction :: headPrint("printArray");
         print_r($array);
-        echo '<hr>';
       }
       public static function searchArray($array,$searchText) {
-        echo '<h1>array search function</h1>';
+        arrayFunction :: headPrint("searchArray");
         echo array_search($searchText,$array);
-        echo '<hr>';
       }
       public static function sumArray($array) {
-        echo '<h1>array sum function</h1>';
+        arrayFunction :: headPrint("sunArray");
         echo array_sum($array);
-        echo '<hr>';
       }
       public static function sliceArray($array,$index) {
-        echo '<h1>array slice function</h1>';
+        arrayFunction :: headPrint("sliceArray");
         print_r(array_slice($array,$index));
-        echo '<hr>';
       }
       public static function reverseArray($array) {
-        echo '<h1>array reverse function</h1>';
+        arrayFunction :: headPrint("reverseArray");
         print_r(array_reverse($array));
-        echo '<hr>';
       }
       public static function popArray($array) {
-        echo '<h1>array pop function</h1>';
+        arrayFunction :: headPrint("popArray");
         array_pop($array);
         print_r($array);
-        echo '<hr>';
       }
       public static function valuesArray($array) {
-        echo '<h1>array values function</h1>';
+        arrayFunction :: headPrint("valuesArray");
         print_r(array_values($array));
-        echo '<hr>';
       }
       public static function countArray($array) {
-        echo '<h1>array count function</h1>';
+        arrayFunction :: headPrint("countArray");
         echo count($array);
-        echo '<hr>';
       }
       public static function shuffleArray($array) {
-        echo '<h1>array shuffle function</h1>';
+        arrayFunction :: headPrint("shuffleArray");
         shuffle($array);
         print_r($array);
-        echo '<hr>';
       }
       public static function pushArray($array,$var1,$var2) {
-        echo '<h1>array push function</h1>';
+        arrayFunction :: headPrint("pushArray");
         array_push($array,$var1,$var2);
         print_r($array);
-        echo '<hr>';
       }
 
   }
 
   class stringFunction{
 
+    public static function headPrintStr($funcName){
+        echo '<hr>';
+        echo '<h1>'.$funcName.' function demo</h1>';
+    }
     public static function printText($text) {
-      echo '<h1>print function demo </h1>';
+      stringFunction :: headPrintStr("printText");
       print($text);
-      echo '<hr>';
     }
     public static function substringFunction($text,$index) {
-      echo '<h1>substring function demo </h1>';
+      stringFunction :: headPrintStr("substringFunction");
       echo substr($text,$index);
-      echo '<hr>';
     }
     public static function explodeFunction($text) {
-      echo '<h1>explode function demo </h1>';
+      stringFunction :: headPrintStr("explodeFunction");
       print_r (explode(" ",$text));
-      echo '<hr>';
     }
     public static function replaceFunction($text,$old_word,$new_word) {
-      echo '<h1>replace function demo </h1>';
+      stringFunction :: headPrintStr("replaceFunction");
       echo str_replace($old_word,$new_word,$text);
-      echo '<hr>';
     }
     public static function splitFunction($text) {
-      echo '<h1>split function demo </h1>';
+      stringFunction :: headPrintStr("splitFunction");
       print_r(str_split($text));
-      echo '<hr>';
     }
     public static function shuffleFunction($text) {
-      echo '<h1>shuffle function demo </h1>';
+      stringFunction :: headPrintStr("shuffleFunction");
       echo str_shuffle($text);
-      echo '<hr>';
     }
     public static function wordCountFunction($text) {
-      echo '<h1>word count function demo </h1>';
+      stringFunction :: headPrintStr("wordCountFunction");
       echo str_word_count($text);
-      echo '<hr>';
     }
     public static function stringCompareFunction($text1,$text2) {
-      echo '<h1>string compare function demo </h1>';
+      stringFunction :: headPrintStr("stringCompareFunction");
       echo strcasecmp($text1,$text2);
-      echo '<hr>';
     }
     public static function stringPositionFunction($text,$stringText) {
-      echo '<h1>string position function demo </h1>';
+      stringFunction :: headPrintStr("stringPositionFunction");
       echo stripos($text,$stringText);
-      echo '<hr>';
     }
     public static function stringLengthFunction($text) {
-      echo '<h1>string length function demo </h1>';
+      stringFunction :: headPrintStr("stringLengthFunction");
       echo strlen($text);
-      echo '<hr>';
     }
   }
 
